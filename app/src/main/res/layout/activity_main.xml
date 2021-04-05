@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BCB0E6"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        app:srcCompat="@drawable/androidbasha"
+        tools:layout_editor_absoluteX="287dp"
+        tools:layout_editor_absoluteY="216dp"
+        style="@style/logo"
+        android:contentDescription="@string/logo_with_background" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/txt"
+            android:text="@string/name" />
+
+        <EditText
+            android:id="@+id/edtName"
+            style="@style/edtTxt"
+            android:importantForAutofill="no" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/txt"
+            android:text="@string/email"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/edtEmail"
+            style="@style/edtTxt"
+            android:autofillHints=""
+            android:inputType="textEmailAddress" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/txt"
+            android:text="@string/password"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/edtPass"
+            style="@style/edtTxt"
+            android:importantForAutofill="no"
+            android:inputType="textPassword" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/txt"
+            android:layout_weight="0.1"
+            android:text="Language"
+            android:textSize="20sp" />
+
+        <Spinner
+
+            android:id="@+id/spnLang"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_weight="0.9"
+            android:importantForAutofill="no"
+            android:inputType="textPassword" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <RadioGroup
+        android:id="@+id/rdnG"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rdbtnMale"
+            style="@style/rdbtn"
+            android:text="@string/male"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/rdbtnFemale"
+            style="@style/rdbtn"
+            android:text="@string/female"
+            android:textSize="20sp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#22C51C"
+        android:onClick="btnSave_OnClick"
+        android:text="@string/save"
+        android:textColor="#020202"
+        android:textSize="20sp" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

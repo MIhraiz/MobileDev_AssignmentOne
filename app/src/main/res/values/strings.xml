@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Assignment1</string>
+    <string name="female">Female</string>
+    <string name="male">Male</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="name">Name</string>
+    <string name="save">Save</string>
+    <string name="logo_with_white_color">Logo with white color</string>
+    <string name="logo_with_background">Logo with background</string>
+</resources>
